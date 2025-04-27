@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Light{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: goldenrod;
+            
+        }
+        body{
+            height:100vh;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div id="Light"></div>
+    <div id="btn"></div>
+   <button onclick="on()">switch on</button>
+   <button onclick="off()">switch off</button>
+   <script>
+    function on(){
+        document.getElementById("Light").style.backgroundColor="cyan"
+        document.getElementById("Light").style.boxShadow="0 0 20px cyan"
+    }
+    function off(){
+        document.getElementById("Light").style.backgroundColor="white"
+        document.getElementById("Light").style.boxShadow="none"
+    }
+   </script>
+</body>
+</html>
